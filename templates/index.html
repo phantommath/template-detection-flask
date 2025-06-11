@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detecção de Template</title>
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
+</head>
+<body>
+    <h1>Detecção de Template em Vídeo</h1>
+    <form id="upload-form">
+        <label>Vídeo (MP4): <input type="file" name="video" accept="video/mp4" required></label><br>
+        <label>Template (JPG): <input type="file" name="template" accept="image/jpeg" required></label><br>
+        <label>Threshold: <input type="number" name="threshold" step="0.01" value="0.8"></label><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="status">Status: Aguardando envio</p>
+    <script src="/static/script.js"></script>
+</body>
+</html>

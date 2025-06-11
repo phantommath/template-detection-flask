@@ -1,0 +1,4 @@
+flask
+flask-socketio
+opencv-python
+pytest
